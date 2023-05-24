@@ -8,7 +8,7 @@
 
 
 
-## 🔐 Front-End Team Commit Convention
+## 🔐 Commit Convention
 **Tag Name**|**Description**
 :---|:---
 feat|새로운 기능을 추가
