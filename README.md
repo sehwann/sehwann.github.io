@@ -1,14 +1,14 @@
-# 💡 블로그 개설 💡
+# 블로그 개설 
 
-## 📒 블로그 바로가기   
+## 블로그 바로가기   
 👉🏻 **블로그 URL** : **https://sehwann.github.io/**   
 
-## ⚒️ style theme
+## style theme
 👉 **plainwhite-jekyll**
 
 
 
-## 🔐 Commit Convention
+## Commit Convention
 **Tag Name**|**Description**
 :---|:---
 feat|새로운 기능을 추가
