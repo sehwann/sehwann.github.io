@@ -12,6 +12,7 @@ categories: Linux
 # 구성
 운영체제(OS)는 컴퓨터 자원을 관리하는 핵심인 [Kernel]과 <br>
 사용자와의 상호작용을 하기 위한 [Shell, File System]으로 구성되어있어.<br>
+<br>
 
 # Shell
 우리가 컴퓨터에게 명령을 내리려고 할 때 입력을 해줘야 하잖아?<br>
@@ -26,7 +27,6 @@ Shell은 Binary형태를 사람이 알아볼 수 있는 형태로 표현 해주�
 
 ### Shell은 사용자가 컴퓨터에게 전달하는 명령을 해석하는 프로그램 이야.
 
-<br>
 <br>
 
 # File System
