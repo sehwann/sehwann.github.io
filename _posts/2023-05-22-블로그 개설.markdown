@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "블로그 개설"
+date:   2023-05-22 18:01:02 +0530
+categories: Intro
+---
+안녕하세요.<br>
+신입개발자 박세환 입니다.<br>
+
+# 　
+<br>
+이 블로그저장소는 메모장형식으로,<br>
+제가 궁금했던 내용들을 찾아보고 공부한 뒤 정리하여 포스팅합니다.<br>
+<br>
+임베디드 시스템의 기본 개념부터 심화된 주제까지 폭넓은 내용을 다룰 예정이며, <br>
+이해한것을 가볍게 풀어서 글 형식으로 포스팅하려고 합니다.<br>
+<br>
+제가 작성한 내용이 틀렸을 수도 있습니다.<br>
+깃허브 또는 이메일로 알려주신다면, 수정하겠습니다.<br>
+<br>
+이후 제가 알고있는 내용이라면, 궁금한 점이나 질문에 대한 답변도 제공할 예정입니다.<br>
+<br>
+오랫동안 함께 배워 나갈 수 있는 꾸준한 블로그 포스팅이 되도록 하겠습니다.<br>
+<br>
+감사합니다.
+<br>
+<br>
+
+
+
+- - -
+© 2023 sehwan.park, Inc. All Rights Reserved.
+
+
+
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
