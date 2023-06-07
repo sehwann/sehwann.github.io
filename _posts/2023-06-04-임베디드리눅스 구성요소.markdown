@@ -12,6 +12,7 @@ categories: Embedded Linux
 <br>
 
 # 임베디드 리눅스 구성요소
+<br>
 
 ## 툴 체인(Toolchain)<br>
 툴 체인은 임베디드 리눅스 보드에서의 첫 시작이야.<br>
@@ -37,7 +38,7 @@ Host(PC)에서 작성한 코드를 MCU에 맞게 컴파일을 해서 바이너�
 ```javascript
     arm-linux-gcc
 ```
-
+<br>
 
 ## 부트로더(Bootloader)<br>
 부트로더는 부팅 시에 가장 먼저 실행되고,<br>
