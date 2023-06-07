@@ -2,7 +2,7 @@
 layout: post
 title:  "임베디드? 펌웨어? 리눅스?"
 date:   2023-05-30 15:12:22 +0530
-categories: Embedded firmware Linux
+categories: Embedded Firmware Linux
 ---
 임베디드? 펌웨어? 리눅스? 뭐가 다른거야?<br>
 # 　
