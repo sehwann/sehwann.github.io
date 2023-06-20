@@ -4,7 +4,7 @@ title:  "임베디드 리눅스 개발(1), 빌드루트 다운로드"
 date:   2023-06-19 16:06:35 +0000
 categories: Embedded Linux
 ---
-임베디드 리눅스를 개발하기 위한 개발환경<br>
+임베디드 리눅스를 개발하기 위한 개발환경 구축(1)<br>
 # 　
 
 임베디드 리눅스를 개발하기 위해서는 **Host PC, 개발보드, 컴파일러, BSP** 이렇게 **총 4가지**가 필요하다고 했지?<br>
@@ -19,7 +19,7 @@ Development Board : Beaglebone Black (ARM)<br>
 빌드시스템으로 BuilRoot를 선택했는데, 빌드시스템과 빌드루트가 궁금하다면<br>
 "임베디드 리눅스 빌드 시스템" 포스팅을 참고해줘.<br>
 <br>
-참고로, 직접 컴파일러와 BSP를 각각 직접 빌드하는 **커스텀빌드** 방식도 있는데,<br>
+참고로, 직접 **컴파일러와 BSP를 각각 직접 빌드**하는 **커스텀빌드** 방식도 있는데,<br>
 다음에 기회가 된다면 시도해보도록 할게.<br>
 <br>
 
@@ -27,8 +27,9 @@ Development Board : Beaglebone Black (ARM)<br>
 # BuildRoot 다운로드 및 빌드
 HOST PC의 Ubuntu설치와 개발보드의 준비(구매)가 끝났다면,<br>
 개발보드에 임베디드 리눅스를 사용하기 위해, 빌드시스템 중 하나인 빌드루트를 다운로드 받을거야.<br>
-아래 사이트에서 다운받자.<br>
-http://buildroot.uclibc.org/download.html<br>
+아래 사이트에서 buildroot-20xx.xx.tar.gz를 다운받자.<br>
+
+#### http://buildroot.uclibc.org/download.html<br>
 <br>
 $ ~/Download 
 
@@ -60,7 +61,7 @@ $ make menuconfig
 $ make <br>
 
 <br>
-make 하면 빌드루트의 build를 진행하고, 시간이 꽤 오래 소요가 돼.(두시간?) <br>
+make 하면 빌드루트의 build를 진행하고, 시간이 꽤 오래 소요가 돼.(2시간30분?) <br>
 BuildRoot의 Build를 완료하면 다음과 같은 파일들이 생성 돼.<br>
 <br>
 <br>
