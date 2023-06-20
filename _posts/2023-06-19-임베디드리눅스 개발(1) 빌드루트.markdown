@@ -10,11 +10,11 @@ categories: Embedded Linux
 임베디드 리눅스를 개발하기 위해서는 **Host PC, 개발보드, 컴파일러, BSP** 이렇게 **총 4가지**가 필요하다고 했지?<br>
 내가 사용한 개발환경에 대해서 작성할게.<br>
 <br>
-**
+**<br>
 HOST PC : Ubuntu 22.04<br>
 Development Board : Beaglebone Black (ARM)<br>
 빌드시스템 : BuildRoot<br>
-**
+**<br>
 <br>
 빌드시스템으로 BuilRoot를 선택했는데, 빌드시스템과 빌드루트가 궁금하다면<br>
 "임베디드 리눅스 빌드 시스템" 포스팅을 참고해줘.<br>
