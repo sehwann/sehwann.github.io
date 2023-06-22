@@ -24,6 +24,7 @@ Development Board : Beaglebone Black (ARM)<br>
 <br>
 
 
+
 # BuildRoot 다운로드 및 빌드
 HOST PC의 Ubuntu설치와 개발보드의 준비(구매)가 끝났다면,<br>
 개발보드에 임베디드 리눅스를 사용하기 위해, 빌드시스템 중 하나인 빌드루트를 다운로드 받을거야.<br>
@@ -31,15 +32,15 @@ HOST PC의 Ubuntu설치와 개발보드의 준비(구매)가 끝났다면,<br>
 
 #### http://buildroot.uclibc.org/download.html<br>
 <br>
-$ ~/Download 
+ $ ~/Download 
 
-$ tar xvzf buildroot-20xx.xx.tar.gz 
+ $ tar xvzf buildroot-20xx.xx.tar.gz 
 
-$ cd buildroot-20xx.xx
+ $ cd buildroot-20xx.xx
 
-$ make beaglebone_defconfig
+ $ make beaglebone_defconfig
 
-$ make menuconfig
+ $ make menuconfig
 
 <br>
 
@@ -57,21 +58,18 @@ $ make menuconfig
 
 ```
 <br>
+<br>
 
-$ make <br>
+ $ make
 
 <br>
+<br>
+
 make 하면 빌드루트의 build를 진행하고, 시간이 꽤 오래 소요가 돼.(2시간30분?) <br>
-BuildRoot의 Build를 완료하면 다음과 같은 파일들이 생성 돼.<br>
+BuildRoot의 Build를 완료하면 다음과 같은 파일들이 생성 돼. <br>
 <br>
-<br>
-
-![Make](./img/230619/buildroot_make.png)
-![Make](./img/230619/buildroot_make2.png)
-% <img src="img/230619/buildroot_make.png"/>
-% <img src="img/230619/buildroot_make2.png"/>
-
-
+<img src="/img/230619/buildroot_make.png"><br>
+<img src="/img/230619/buildroot_make2.png"><br>
 <br>
 
 다음에는 build하여 만든 image를 SD Card에 복사하여, Beaglebone black에 부팅하도록 하자.<br>
