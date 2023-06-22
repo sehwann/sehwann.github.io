@@ -66,6 +66,12 @@ BuildRoot의 Build를 완료하면 다음과 같은 파일들이 생성 돼.<br>
 <br>
 <br>
 
+<img src="img/230619/buildroot_make.png" /> <br>
+<img src="img/230619/buildroot_make2.png" />
+
+
+<br>
+
 다음에는 build하여 만든 image를 SD Card에 복사하여, Beaglebone black에 부팅하도록 하자.<br>
 
 <br>
