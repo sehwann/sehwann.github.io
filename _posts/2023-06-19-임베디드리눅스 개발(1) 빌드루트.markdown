@@ -66,8 +66,10 @@ BuildRoot의 Build를 완료하면 다음과 같은 파일들이 생성 돼.<br>
 <br>
 <br>
 
-<img src="img/230619/buildroot_make.png" /> <br>
-<img src="img/230619/buildroot_make2.png" />
+![Make](img/230619/buildroot_make.png "Make")
+
+% <img src="img/230619/buildroot_make.png"/>
+% <img src="img/230619/buildroot_make2.png"/>
 
 
 <br>
