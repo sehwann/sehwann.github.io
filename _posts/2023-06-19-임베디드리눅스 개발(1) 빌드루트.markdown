@@ -58,7 +58,6 @@ HOST PC의 Ubuntu설치와 개발보드의 준비(구매)가 끝났다면,<br>
 
 ```
 <br>
-<br>
 
  $ make
 
@@ -68,8 +67,10 @@ HOST PC의 Ubuntu설치와 개발보드의 준비(구매)가 끝났다면,<br>
 make 하면 빌드루트의 build를 진행하고, 시간이 꽤 오래 소요가 돼.(2시간30분?) <br>
 BuildRoot의 Build를 완료하면 다음과 같은 파일들이 생성 돼. <br>
 <br>
-<img src="/img/230619/buildroot_make.png"><br>
-<img src="/img/230619/buildroot_make2.png"><br>
+![make](./img/230619/buildroot_make.png.png)<br>
+![make2](./img/230619/buildroot_make2.png.png)<br>
+<img src="./img/230619/buildroot_make.png", height="100x", width="100px"><br>
+<img src="./img/230619/buildroot_make2.png", height="100x", width="100px"><br>
 <br>
 
 다음에는 build하여 만든 image를 SD Card에 복사하여, Beaglebone black에 부팅하도록 하자.<br>
