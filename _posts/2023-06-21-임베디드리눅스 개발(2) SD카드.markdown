@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "임베디드 리눅스 개발(2), SD카드사용"
+date:   2023-06-21 11:06:41 +0000
+categories: Embedded Linux
+---
+임베디드 리눅스를 개발하기 위한 개발환경 구축(2)<br>
+# 　
+
+BuildRoot의 Build를 완료했으면,
+생성된 빌드루트image를 SD카드에 담아서 개발보드에 넣어서 동작시킬거야.
+이번에는 빌드루트를 BeagleBone Black에 설치하기위해, 빌드된 이미지를 SD카드에 이미지를 담는 방법을 포스팅해볼게.
+<br>
+
+# SD카드에 이미지 넣기
+먼저, SD카드와 카드리더기를 준비하자.
+
+1. SD카드를 카드리더기에 삽입하고, Host PC에 연결해.
+2. 터미널에서 "lsblk" or "df -h" 명령어를 입력해서 현재 연결된 디스크 및 파티션 목록을 확인해.
+3. 입력한 명령어의 출력 결과에서 SD 카드를 식별하자. 
+   [sdX]는 SD 카드의 장치 이름을 나타내며, 실제로는 "sdb", "sdc" 등으로 표시가 돼. 장치 이름을 정확히 확인하자.
+   참고로 나는 "sdc1" 로 나오는데, 이것이 SD카드의 장치 이름과 파티션 번호야.
+4. SD카드에 이미지를 Write 하기전에, SD카드안에서 공간을 확보(파티션을 설정)해줘야 해.
+5. 파티션을 추가하기 위해서 "fdisk"를 사용할거야. 
+   확인했던 SD카드장치이름으로 수정해서 사용하면 돼.
+   $ sudo fdisk /dev/sdc
+
+```javascript
+   
+
+```
+5. 
+<br>
+파티션 나누고,
+
+sudo mkfs.vfat -F 16 -n boot /dev/sdc1: 첫 번째 파티션을 FAT16 파일 시스템으로 포맷합니다. 이 명령은 FAT16 파일 시스템을 생성하고 라벨을 "boot"로 지정합니다.
+
+sudo mkfs.ext4 -L rootfs -E nodiscard /dev/sdc2: 두 번째 파티션을 ext4 파일 시스템으로 포맷합니다. 이 명령은 ext4 파일 시스템을 생성하고 라벨을 "rootfs"로 지정합니다. -E nodiscard 옵션은 디스크에 데이터를 작성할 때 TRIM 명령을 사용하지 않도록 설정합니다.
+
+boot , rootfs 폴더만들기
+df-h , lsblk 확인하기
+
+
+BOOT 파티션:
+
+MLO: 이 파일은 부팅 로더에 해당합니다. BOOT 파티션의 루트 디렉토리에 복사해 주세요.
+u-boot.img: 이 파일은 U-Boot 부트로더에 해당합니다. MLO 파일과 함께 BOOT 파티션의 루트 디렉토리에 복사해 주세요.
+uEnv.txt: 이 파일은 부팅 설정을 포함하고 있습니다. BOOT 파티션의 루트 디렉토리에 복사해 주세요.
+zImage: 이 파일은 커널 이미지입니다. BOOT 파티션의 루트 디렉토리에 복사해 주세요.
+am335x-boneblack.dtb (또는 다른 적절한 DTB 파일): 이 파일은 기기 특정 설정을 가지고 있는 장치 트리 바이너리입니다. BOOT 파티션의 루트 디렉토리에 복사해 주세요.
+ROOT 파티션:
+
+rootfs.ext2 또는 rootfs.ext4: 이 파일은 루트 파일 시스템을 포함하고 있습니다. ROOT 파티션의 루트 디렉토리에 복사해 주세요
+
+예
+$ sudo cp ./MLO /media/petabrew/boot/
+
+
+- - -
+© 2023 sehwan.park, Inc. All Rights Reserved.
+
+
+
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
